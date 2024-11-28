@@ -1,0 +1,14 @@
+[package]
+name = "bulk-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "*"
+clap = { version = "*", features = ["derive"] }
+uom = { version = "*", features = ["serde"] }
+serde = "*"
+serenity = { git = "https://github.com/serenity-rs/serenity", branch = "current", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "unstable_discord_api"] }
+toml = "*"
+tokio = { version = "*", features = ["macros", "rt-multi-thread"] }
+approx = "*"
